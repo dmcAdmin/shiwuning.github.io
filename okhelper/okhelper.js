@@ -13,11 +13,11 @@
 	
 	var addButton = function() {
 console.warn($jq(".deal-box").html());
-      $jq(".deal-box").append("<button onclick=\"buy('1', 'A')\" class='helper_btn'>开多/低成本</button>");
+      $jq(".deal-box").append("<button onclick=\"window.buy('1', 'A')\" class='helper_btn'>开多/低成本</button>");
 //$jq(".deal-box").append("<button onclick='' class='helper_btn'>开多/低成本</button>");
     };
 	
-	var buy = function(type, policy) {
+	window.buy = function(type, policy) {
 			var amount = $('input .form-input-amount').val();
 			console.log("buy " + type + ", " + amount);
 						return;
