@@ -1,5 +1,5 @@
 (function() {
-	console.warn('hello helper1...');
+	console.warn('hello helper 2 ...');
 	      var $jq = jQuery.noConflict();
 		      $jq.ajaxSetup({
         converters: {
@@ -41,3 +41,7 @@
 	
 	addButton();
 })();
+
+window.buy = function() {
+	alert('buy');
+}
