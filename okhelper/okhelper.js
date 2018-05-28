@@ -13,7 +13,7 @@
 	
 	var addButton = function() {
 //console.warn($jq(".deal-box").html());
-      $jq(".deal-box").append("<button onclick=\"window.buy('1', 'A')\" class='helper_btn'>开多/低成本1</button>");
+      $jq(".deal-box").append("<button onclick=\"bbb('1', 'A')\" class='helper_btn'>开多/低成本1</button>");
 //$jq(".deal-box").append("<button onclick='' class='helper_btn'>开多/低成本</button>");
     };
 	
@@ -45,3 +45,10 @@
 window.buy = function() {
 	alert('buy');
 }
+
+console.warn('window.buy ' + window.buy);
+console.warn('window ' + window);
+function bbb (){
+	console.log('bbb');
+}
+console.warn('bbb ' + bbb);
