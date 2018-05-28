@@ -12,8 +12,8 @@
       });
 	
 	var addButton = function() {
-console.warn($jq(".deal-box").html());
-      $jq(".deal-box").append("<button onclick=\"window.buy('1', 'A')\" class='helper_btn'>开多/低成本</button>");
+//console.warn($jq(".deal-box").html());
+      $jq(".deal-box").append("<button onclick=\"window.buy('1', 'A')\" class='helper_btn'>开多/低成本1</button>");
 //$jq(".deal-box").append("<button onclick='' class='helper_btn'>开多/低成本</button>");
     };
 	
