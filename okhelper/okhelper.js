@@ -1,8 +1,18 @@
 (function() {
 	console.warn('hello helper...');
+	      var $jq = jQuery.noConflict();
+		      $jq.ajaxSetup({
+        converters: {
+          "text script": function( text ) {
+           // jQuery.globalEval( text );
+            return text;
+          }
+        },
+        cache: false
+      });
+	
 	var addButton = function() {
-      var addClassName = "";
-      var $jq = jQuery.noConflict();
+console.warn($jq(".deal-box").html());
       $jq(".deal-box").append("<button onclick=\"buy('1', 'A')\" class='helper_btn'>开多/低成本</button>");
 //$jq(".deal-box").append("<button onclick='' class='helper_btn'>开多/低成本</button>");
     };
