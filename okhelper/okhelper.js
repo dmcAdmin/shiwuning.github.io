@@ -1,5 +1,5 @@
 (function() {
-	console.warn('hello helper...');
+	console.warn('hello helper1...');
 	      var $jq = jQuery.noConflict();
 		      $jq.ajaxSetup({
         converters: {
