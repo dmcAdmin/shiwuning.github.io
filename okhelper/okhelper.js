@@ -19,9 +19,14 @@
 	
 	window.buy = function(type, policy) {
 			var amount = $jq('input.form-input-amount').val();
+      if (amount == '') {
+        alert('请先输入张数');
+        return;
+      }
 			console.log("buy " + type + ", " + amount);
-						return;
-			$.ajax({
+      var url = 'http://btc.52star.top:8998';
+//						return;
+			$jq.ajax({
 				url: url + '/buy',
 				timeout: 10000,
 				type: 'post',
@@ -34,7 +39,7 @@
 				dataType: 'json',
 				success: function(res) {
 					console.log(JSON.stringify(res));
-					$('#out').html(JSON.stringify(res))
+					//$('#out').html(JSON.stringify(res));
 				}
 			});
 	};
