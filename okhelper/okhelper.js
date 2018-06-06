@@ -24,7 +24,7 @@
         return;
       }
 			console.log("buy " + type + ", " + amount);
-      var url = 'http://btc.52star.top:8998';
+      var url = 'https://btc.52star.top';
 //						return;
 			$jq.ajax({
 				url: url + '/buy',
