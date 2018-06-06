@@ -18,7 +18,7 @@
     };
 	
 	window.buy = function(type, policy) {
-			var amount = $jq('input .form-input-amount').val();
+			var amount = $jq('input.form-input-amount').val();
 			console.log("buy " + type + ", " + amount);
 						return;
 			$.ajax({
