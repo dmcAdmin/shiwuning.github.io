@@ -32,7 +32,7 @@
 				type: 'post',
 				data: {
 					type: type,
-					price: price,
+					//price: price,
 					amount: amount,
 					policy: policy
 				},
