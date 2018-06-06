@@ -41,14 +41,3 @@
 	
 	addButton();
 })();
-
-window.buy = function() {
-	alert('buy');
-}
-
-console.warn('window.buy ' + window.buy);
-console.warn('window ' + window);
-function bbb (){
-	console.log('bbb');
-}
-console.warn('bbb ' + bbb);
